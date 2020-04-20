@@ -36,7 +36,7 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (_state == State.Busy)
         {

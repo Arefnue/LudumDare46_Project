@@ -21,7 +21,7 @@ public class PlayerSwap : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {

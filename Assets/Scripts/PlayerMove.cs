@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        //Move();
     }
 
     private void Move()
@@ -37,9 +37,12 @@ public class PlayerMove : MonoBehaviour
 
         }
         
-        controller.SimpleMove(movement * (Time.deltaTime*playerSpeed));
+        controller.SimpleMove(movement * (playerSpeed));
         
     }
-    
-    
+
+    private void FixedUpdate()
+    {
+        Move();
+    }
 }

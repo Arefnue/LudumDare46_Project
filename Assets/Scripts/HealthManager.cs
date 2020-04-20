@@ -43,7 +43,7 @@ public class HealthManager : MonoBehaviour
         energySlider.value = currentEnergy;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
