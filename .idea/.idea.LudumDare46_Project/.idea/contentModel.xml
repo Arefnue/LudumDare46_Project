@@ -27,6 +27,12 @@
           <e p="SpawnController.cs" t="Include" />
         </e>
         <e p="Thirdparty" t="Include">
+          <e p="LoopAndMusicFree" t="Include">
+            <e p="_readme" t="Include">
+              <e p="readme_en_ver2.0.txt" t="Include" />
+              <e p="readme_jp_ver2.0.txt" t="Include" />
+            </e>
+          </e>
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">
               <e p="NavMeshAssetManager.cs" t="Include" />

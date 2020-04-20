@@ -7,6 +7,7 @@ public class CollectableController : MonoBehaviour
 {
     public CollectableProfile profile;
     public GameObject collectParticle;
+    public AudioClip collectClip;
 
 
     private void OnTriggerEnter(Collider other)
@@ -22,6 +23,7 @@ public class CollectableController : MonoBehaviour
                 HealthManager.instance.Heal(profile.value);
             }
             Instantiate(collectParticle, transform.position, Quaternion.identity);
+            AudioManager.instance.PlayOneShot(collectClip);
             Destroy(gameObject);
         }
 
@@ -36,6 +38,7 @@ public class CollectableController : MonoBehaviour
                 HealthManager.instance.Heal(profile.value);
             }
             Instantiate(collectParticle, transform.position, Quaternion.identity);
+            AudioManager.instance.PlayOneShot(collectClip);
             Destroy(gameObject);
         }
     }

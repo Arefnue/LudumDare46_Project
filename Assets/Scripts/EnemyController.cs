@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     public EnemyProfile profile;
     public Transform hitPoint;
     public GameObject hitParticle;
+    public AudioClip hitClip;
     public enum State
     {
         Idle,
@@ -103,6 +104,7 @@ public class EnemyController : MonoBehaviour
     public void DealDamage()
     {
         Instantiate(hitParticle, hitPoint.position, Quaternion.identity);
+        AudioManager.instance.PlayOneShot(hitClip);
         HealthManager.instance.TakeDamage(_attackDamage);
     }
     

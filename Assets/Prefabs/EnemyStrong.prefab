@@ -136,6 +136,7 @@ MonoBehaviour:
   hitPoint: {fileID: 7890356491737818775}
   hitParticle: {fileID: 8185139688200615679, guid: e640b47c60fa3c44798ab34257e0bcee,
     type: 3}
+  hitClip: {fileID: 8300000, guid: 958408b32ccf3714ea02821877b0870c, type: 3}
 --- !u!195 &5661284075134976989
 NavMeshAgent:
   m_ObjectHideFlags: 0

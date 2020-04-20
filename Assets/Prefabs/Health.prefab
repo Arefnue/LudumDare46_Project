@@ -49,6 +49,7 @@ MonoBehaviour:
   profile: {fileID: 11400000, guid: 779397efb2cae4042a681b3cb7bc4ba0, type: 2}
   collectParticle: {fileID: 7419529002302720985, guid: b904c9951b4c6604fbb6368850496af3,
     type: 3}
+  collectClip: {fileID: 8300000, guid: 7b6f109b74d8dcc4bb13caa60c3b0250, type: 3}
 --- !u!65 &3259529968526489290
 BoxCollider:
   m_ObjectHideFlags: 0
